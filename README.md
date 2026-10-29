@@ -8,7 +8,7 @@ A bank wanted to analyze credit card usage, monitor card activity, and identify 
 <img width="1241" height="616" alt="image" src="https://github.com/user-attachments/assets/0ac7695e-59ff-4a53-bf80-be5bb875884b" />
 
 ETL Workflow
-1. Load Data into Staging Layer
+**1. Load Data into Staging Layer**
 
 The ETL process begins by extracting data from the source system and loading it into a staging table.
 
@@ -24,7 +24,7 @@ Standardizing formats and business values
 
 The staging layer isolates source-system complexities from the warehouse structure.
 
-2. Populate Dimension Tables
+**2. Populate Dimension Tables**
 
 After the staging data has been cleansed, the ETL process loads dimension tables.
 
@@ -45,7 +45,7 @@ Surrogate keys are generated for each dimension record.
 
 This creates a standardized and reusable set of business entities within the warehouse.
 
-3. Lookup Dimension Keys
+**3. Lookup Dimension Keys**
 
 Once all dimensions have been populated, the ETL process performs dimension lookups.
 
@@ -60,7 +60,7 @@ Corresponding dimension surrogate keys
 
 This step establishes the relationships required by the Star Schema.
 
-4. Load Fact Table
+**4. Load Fact Table**
 
 After all dimension keys have been resolved, the transformed staging data is loaded into the fact table.
 
